@@ -1,0 +1,12 @@
+int binarySearch(int arr, int left, int right, int search)
+	if (right >= left)
+		int mid = left + (right - left)/2
+
+		if (arr[mid] == search)
+			return mid
+		else if (arr[mid] > search)
+			return binarySearch(arr, left, mid-1, search)
+		else
+			return binarySearch(arr, mid+1, right, search)
+
+	return -1
