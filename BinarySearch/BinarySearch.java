@@ -21,7 +21,7 @@ class BinarySearch {
 		// 		index, that means we can keep searching for the val
 		if (right >= left) {
 			// Calculate the midpoint of the left and right index
-			int mid = left + (right - left)/2;
+			int mid = (left + right)/2;
 
 			// If the mid val is what we are looking for,
 			//		return the mid index
